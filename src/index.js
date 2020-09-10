@@ -30,9 +30,8 @@ const MessageInput = ({ onSubmit }) => {
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App MessageInput={MessageInput} />
-  </React.StrictMode>,
+
+  <App MessageInput={MessageInput} />,
   document.getElementById('root')
 );
 

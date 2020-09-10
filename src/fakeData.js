@@ -6,6 +6,8 @@ export const getUser = index => {
     let firstName = faker.name.firstName()
     let lastName = faker.name.lastName()
     generated[index] = {
+      height: Math.random() * 70 + 50,
+      bg: Math.floor(Math.random() * 16777215).toString(16),
       name: `${firstName} ${lastName}`,
       initials: `${firstName.substr(0, 1)}${lastName.substr(0, 1)}`,
       description: faker.company.catchPhrase(),
